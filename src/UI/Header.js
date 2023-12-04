@@ -60,7 +60,7 @@ function Header() {
 				<Logo>
 					<LogoImage
 						src="https://ichereta.com/static/media/logowitht.d8bdbb154b2f43a1a62a9468b46394dd.svg"
-						alt="main image"
+						alt="ichereta logo"
 					/>
 				</Logo>
 				<Links>
