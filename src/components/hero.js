@@ -43,17 +43,17 @@ const UlDiv = styled.div`
 	justify-content: space-between;
 	margin-top: 4rem;
 `
-const Ul = styled.ul`
+export const Ul = styled.ul`
 	display: flex;
 	align-items: center;
 	list-style-type: none;
 	margin-bottom: 0.5rem;
 `
-const Li = styled.li`
+export const Li = styled.li`
 	font-size: 1.2rem;
 	font-weight: 400;
 `
-const CheakedIcon = styled.img`
+export const CheakedIcon = styled.img`
 	width: 1.4rem;
 	margin-right: 0.8rem;
 `
@@ -159,7 +159,7 @@ function hero() {
 				<HeroImageDiv>
 					<HeroImage
 						src="https://ichereta.com/static/media/headerImg.8725c96c0c8e3455d30d.png"
-						alt=""
+						alt="the person staring on the phone"
 					/>
 				</HeroImageDiv>
 			</HeroDiv>
