@@ -1,7 +1,7 @@
 import { styled } from 'styled-components'
 import LoginEmail from './LoginEmail'
 import Loginpassword from './Loginpassword'
-// import EmailInput from './Test'
+import LoginButton from './LoginButton'
 
 const InputFormWrapper = styled.div`
 	display: flex;
@@ -13,9 +13,9 @@ const InputFormWrapper = styled.div`
 function LoginInput() {
 	return (
 		<InputFormWrapper>
-			{/* <EmailInput /> */}
 			<LoginEmail />
 			<Loginpassword />
+			<LoginButton />
 		</InputFormWrapper>
 	)
 }

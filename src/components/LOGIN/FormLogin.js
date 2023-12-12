@@ -9,6 +9,7 @@ const LoginFormWrapper = styled.div`
 	margin: auto;
 	background-color: white;
 	padding: 2.8rem;
+	margin-top: 6rem;
 `
 
 function FormLogin() {
