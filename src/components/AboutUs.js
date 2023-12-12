@@ -14,7 +14,7 @@ const LinkP = styled.p`
 function AboutUs() {
 	return (
 		<LinkWrapper>
-			<Link style={{ textDecoration: 'none' }}>
+			<Link style={{ textDecoration: 'none' }} to="/about">
 				<LinkP>About Us.</LinkP>
 			</Link>
 			<Link style={{ textDecoration: 'none' }}>
