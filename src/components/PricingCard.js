@@ -9,10 +9,14 @@ const PriceWrapper = styled.div`
 	margin-bottom: 5rem;
 `
 const CardWrapper = styled.div`
+	width: 100%;
 	padding: 6rem 5rem;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	/* @media (max-width: 1175px) {
+		gap: 1.2rem;
+	} */
 `
 
 //

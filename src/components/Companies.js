@@ -1,12 +1,13 @@
 import Tittle from '../UI/Tittle'
 import HorizontalScroll from './HorizontalScroll'
-import Banks from './Banks'
+// import Banks from './Banks'
+import BankInfo from './BankInfo'
 //
 function Companies() {
 	return (
 		<>
 			<Tittle />
-			<HorizontalScroll>{<Banks />}</HorizontalScroll>
+			<HorizontalScroll>{<BankInfo />}</HorizontalScroll>
 		</>
 	)
 }

@@ -58,7 +58,7 @@ const Question = styled.p`
 const AnswerContainer = styled.div`
 	margin-top: 1rem;
 	margin-left: 6rem;
-	/* transition-duration: display 1s ease; */
+
 	line-height: 1.8;
 `
 const Answer = styled.p`
@@ -79,8 +79,8 @@ function QuestionAndAnswer({ data }) {
 	return (
 		<FAQWrapper>
 			{data.map((item, index) => (
-				<FAQDiv>
-					<QuestionAnswerWrapper key={index} onClick={() => toggleAnswer(index)}>
+				<FAQDiv key={item.question}>
+					<QuestionAnswerWrapper onClick={() => toggleAnswer(index)}>
 						<QuestionContainer>
 							<PlusMinusIcon>{visibleAnswers[index] ? '-' : '+'}</PlusMinusIcon>
 							<Question>{item.question}</Question>
@@ -96,16 +96,3 @@ function QuestionAndAnswer({ data }) {
 }
 
 export default QuestionAndAnswer
-// <QuestionAnswerWrapper>
-// 				<QuestionContainer>
-// 					<PlusMinusIcon>+</PlusMinusIcon>
-// 					<Question>What are the sources of tenders?</Question>
-// 				</QuestionContainer>
-// 				<AnswerContainer>
-// 					<Answer>
-// 						iChereta is an online platform that aggregates and delivers tender notices from
-// 						various sources across Ethiopia. We provide a one-stop-shop for businesses and
-// 						individuals seeking to explore opportunities in the Ethiopian market.
-// 					</Answer>
-// 				</AnswerContainer>
-// 			</QuestionAnswerWrapper>

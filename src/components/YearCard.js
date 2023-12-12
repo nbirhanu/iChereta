@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { Ul, CheakedIcon, Li } from './hero'
+import { Ul, CheakedIcon, Li } from './HeroTittle'
 import Cheak from '../../src/data/img/download.png'
 import { Link } from 'react-router-dom'
 import {
@@ -29,7 +29,7 @@ const BuySaveP = styled.p`
 //
 function YearCard() {
 	return (
-		<BuySaveWrapper style={{ maxWidth: '32rem' }}>
+		<BuySaveWrapper>
 			<BuySave>
 				<BuySaveP>Buy Yearly and Save 60%</BuySaveP>
 			</BuySave>

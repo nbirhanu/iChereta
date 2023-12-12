@@ -13,6 +13,6 @@ export const P = styled.p`
 export const TittleDiv = styled.div`
 	margin: auto;
 	text-align: center;
-	margin-top: 3rem;
-	margin-bottom: 9rem;
+	margin-top: 5rem;
+	margin-bottom: 8rem;
 `

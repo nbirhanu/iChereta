@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import { Link } from 'react-router-dom'
+import MobileNavigation from '../components/MobileNavigation'
 const FixedHeader = styled.div`
 	position: fixed;
 	top: 0;
@@ -7,6 +8,7 @@ const FixedHeader = styled.div`
 	width: 100%;
 	background-color: hsla(0, 0%, 100%, 0.9);
 	border-bottom: 1px solid rgb(226 232 240);
+	backdrop-filter: blur(3px);
 	padding: 10px;
 	color: white;
 	z-index: 1000;
@@ -20,10 +22,10 @@ const LinkWrapper = styled.div`
 	justify-content: space-between;
 	align-items: center;
 `
-const Logo = styled.div`
+export const Logo = styled.div`
 	cursor: pointer;
 `
-const LogoImage = styled.img`
+export const LogoImage = styled.img`
 	width: 10.4rem;
 `
 const Links = styled.div`
@@ -36,6 +38,9 @@ const LinkLetter = styled.p`
 	font-size: 1.4rem;
 	&:hover {
 		color: rgb(59 130 246);
+	}
+	@media (max-width: 800px) {
+		display: none;
 	}
 `
 const Login = styled.p`
@@ -51,6 +56,9 @@ const Login = styled.p`
 	&:hover {
 		background-color: #664bc7;
 	}
+	@media (max-width: 800px) {
+		display: none;
+	}
 `
 
 function Header() {
@@ -64,22 +72,23 @@ function Header() {
 					/>
 				</Logo>
 				<Links>
-					<Link style={{ textDecoration: 'none' }}>
+					<Link style={{ textDecoration: 'none' }} to="/tenders">
 						<LinkLetter>Tenders</LinkLetter>
 					</Link>
-					<Link style={{ textDecoration: 'none' }}>
+					<Link style={{ textDecoration: 'none' }} to="/pricing">
 						<LinkLetter>Pricing</LinkLetter>
 					</Link>
-					<Link style={{ textDecoration: 'none' }}>
+					<Link style={{ textDecoration: 'none' }} to="/faq">
 						<LinkLetter>FAQ</LinkLetter>
 					</Link>
-					<Link style={{ textDecoration: 'none' }}>
+					<Link style={{ textDecoration: 'none' }} to="/signup">
 						<LinkLetter>Signup</LinkLetter>
 					</Link>
-					<Link style={{ textDecoration: 'none' }}>
+					<Link style={{ textDecoration: 'none' }} to="/login">
 						<Login>Login</Login>
 					</Link>
 				</Links>
+				<MobileNavigation />
 			</LinkWrapper>
 		</FixedHeader>
 	)
