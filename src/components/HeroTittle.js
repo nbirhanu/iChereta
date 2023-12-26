@@ -50,6 +50,12 @@ const HeroH1 = styled.h1`
 	@media (max-width: 670px) {
 		font-size: 5.2rem;
 	}
+	@media (max-width: 575px) {
+		font-size: 4.8rem;
+	}
+	@media (max-width: 530px) {
+		font-size: 4.4rem;
+	}
 `
 //
 const UlDiv = styled.div`
@@ -65,7 +71,6 @@ const UlDiv = styled.div`
 	}
 	@media (max-width: 670px) {
 		margin-top: 4.8rem;
-		margin-bottom: 3.2rem;
 	}
 `
 const ButtonWrapper = styled.div`
@@ -108,6 +113,9 @@ const Signup = styled.p`
 	@media (max-width: 670px) {
 		font-size: 1.8rem;
 	}
+	@media (max-width: 575px) {
+		font-size: 1.4rem;
+	}
 `
 const Login = styled.p`
 	border: 1px solid #664bc7;
@@ -136,6 +144,9 @@ const Login = styled.p`
 	}
 	@media (max-width: 670px) {
 		font-size: 1.8rem;
+	}
+	@media (max-width: 575px) {
+		font-size: 1.4rem;
 	}
 `
 const GraphDiv = styled.div`
@@ -177,6 +188,9 @@ export const Li = styled.li`
 	}
 	@media (max-width: 870px) {
 		font-size: 1.5rem;
+	}
+	@media (max-width: 575px) {
+		font-size: 1.3rem;
 	}
 `
 export const CheakedIcon = styled.img`
