@@ -1,4 +1,5 @@
-import { H1, TittleDiv } from '../Styles/StylesStarterPage/styleTittle'
+import { styled } from 'styled-components'
+import { TittleDiv } from '../Styles/StylesStarterPage/styleTittle'
 import QuestionAndAnswer from './QuestionAndAnswer'
 //
 const faqData = [
@@ -23,12 +24,26 @@ const faqData = [
 			'We collect data from various sources and upload it daily. Our team ensures accuracy of the data.',
 	},
 ]
+
+// style={{ fontSize: '3.8rem', marginBottom: '1.2rem' }}
+const H1 = styled.h1`
+	font-size: 3.8rem;
+	font-weight: 500;
+	color: rgba(31, 41, 55, 0.8);
+	margin-bottom: 0.8rem;
+	@media (max-width: 675px) {
+		font-size: 3.2rem;
+	}
+	@media (max-width: 530px) {
+		font-size: 2.8rem;
+	}
+`
 //
 function QuestionAnswer() {
 	return (
 		<>
 			<TittleDiv>
-				<H1 style={{ fontSize: '3.8rem', marginBottom: '1.2rem' }}>
+				<H1>
 					Frequently Asked <span style={{ color: '#664bc7' }}>Questions.</span>
 				</H1>
 			</TittleDiv>

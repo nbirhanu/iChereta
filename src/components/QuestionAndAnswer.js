@@ -7,12 +7,28 @@ const FAQWrapper = styled.div`
 	margin: 5rem auto;
 	background-color: rgba(249, 248, 253, 0.6);
 	padding: 5rem;
+	border-radius: 5px;
+	@media (max-width: 1100px) {
+		margin: 0 auto;
+	}
+	@media (max-width: 800px) {
+		margin: 0 auto;
+		padding: 0;
+		background-color: white;
+	}
 `
 const FAQDiv = styled.div`
-	width: 70%;
+	/* width: 70%; */
+	width: 80rem;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
+	@media (max-width: 1100px) {
+		width: 90%;
+	}
+	@media (max-width: 950px) {
+		width: 100%;
+	}
 `
 const QuestionAnswerWrapper = styled.div`
 	width: 100%;
@@ -27,6 +43,9 @@ const QuestionAnswerWrapper = styled.div`
 	&:hover {
 		background-color: rgba(239, 246, 255, 0.5);
 	}
+	@media (max-width: 800px) {
+		background-color: rgba(248, 250, 252, 1);
+	}
 `
 ///style question container
 const QuestionContainer = styled.div`
@@ -37,28 +56,38 @@ const QuestionContainer = styled.div`
 
 // `
 const PlusMinusIcon = styled.span`
+	position: relative;
 	font-size: 20px;
 	color: #757575; /* Grey icon color */
 	width: 24px;
 	height: 24px;
-	display: flex;
+	/* display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
 	border-radius: 50%; /* Circular shape */
 	background-color: white; /* White background for the icon */
 `
+const Icon = styled.p`
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+`
+
 const Question = styled.p`
 	font-size: 1.4rem;
 	line-height: 2rem;
 	font-weight: 600;
 	color: rgba(75, 85, 99, 1);
+	@media (max-width: 585px) {
+		font-size: 1.3rem;
+	}
 `
 
 ////// styled answer container
 const AnswerContainer = styled.div`
 	margin-top: 1rem;
 	margin-left: 6rem;
-
 	line-height: 1.8;
 `
 const Answer = styled.p`
@@ -66,6 +95,12 @@ const Answer = styled.p`
 	color: rgba(75, 85, 99, 1);
 	font-size: 1.3rem;
 	font-weight: 600;
+	@media (max-width: 680px) {
+		font-size: 1.1rem;
+	}
+	@media (max-width: 585px) {
+		font-size: 1rem;
+	}
 `
 //
 function QuestionAndAnswer({ data }) {
@@ -82,7 +117,9 @@ function QuestionAndAnswer({ data }) {
 				<FAQDiv key={item.question}>
 					<QuestionAnswerWrapper onClick={() => toggleAnswer(index)}>
 						<QuestionContainer>
-							<PlusMinusIcon>{visibleAnswers[index] ? '-' : '+'}</PlusMinusIcon>
+							<PlusMinusIcon>
+								{visibleAnswers[index] ? <Icon>-</Icon> : <Icon>+</Icon>}
+							</PlusMinusIcon>
 							<Question>{item.question}</Question>
 						</QuestionContainer>
 						<AnswerContainer>

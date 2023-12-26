@@ -7,16 +7,25 @@ const PriceWrapper = styled.div`
 	margin: auto;
 	background-color: rgba(249, 248, 253, 0.8);
 	margin-bottom: 5rem;
+	@media (max-width: 1100px) {
+		background-color: white;
+	}
 `
 const CardWrapper = styled.div`
 	width: 100%;
-	padding: 6rem 5rem;
+	padding: 5rem 0;
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
-	/* @media (max-width: 1175px) {
-		gap: 1.2rem;
-	} */
+	justify-content: center;
+	gap: 5.2rem;
+	@media (max-width: 1100px) {
+		justify-content: space-between;
+		gap: 0;
+	}
+	@media (max-width: 1010px) {
+		flex-direction: column;
+		gap: 2.8rem;
+	}
 `
 
 //
