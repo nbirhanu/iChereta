@@ -4,6 +4,13 @@ import { styled } from 'styled-components'
 const TelePhoneContainer = styled.div`
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	@media (max-width: 945px) {
+		grid-template-columns: 35rem 1fr;
+	}
+	@media (max-width: 700px) {
+		display: flex;
+		flex-direction: column;
+	}
 `
 //
 const TelePhoneTittleDiv = styled.div`
@@ -12,6 +19,10 @@ const TelePhoneTittleDiv = styled.div`
 	align-items: center;
 	border-bottom-left-radius: 0.6rem;
 	border-top-left-radius: 0.6rem;
+	@media (max-width: 700px) {
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
 `
 const TelePhoneTittle = styled.h1`
 	font-size: 3.2rem; /* 36px */
@@ -20,6 +31,26 @@ const TelePhoneTittle = styled.h1`
 	color: #29204e;
 	padding: 6.2rem;
 	margin-left: 1.2rem;
+	@media (max-width: 1050px) {
+		padding: 5.4rem;
+	}
+	@media (max-width: 945px) {
+		margin-left: -2rem;
+		font-size: 2.8rem;
+		line-height: 3.5rem;
+	}
+	@media (max-width: 700px) {
+		margin: auto;
+		text-align: center;
+		padding: 1.4rem;
+		font-size: 2.4rem;
+		line-height: 3.2rem;
+	}
+	@media (max-width: 550px) {
+		font-size: 1.8rem;
+		line-height: 3rem;
+		padding: 1.2rem;
+	}
 `
 
 //
@@ -32,6 +63,17 @@ const TelephoneSignup = styled.div`
 	gap: 2rem;
 	border-top-right-radius: 0.6rem;
 	border-bottom-right-radius: 0.6rem;
+	@media (max-width: 945px) {
+		gap: 1rem;
+	}
+	@media (max-width: 700px) {
+		padding: 2.4rem;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	@media (max-width: 550px) {
+		padding: 1.8rem;
+	}
 `
 const SignUpButton = styled.button`
 	width: 18rem;
@@ -44,6 +86,16 @@ const SignUpButton = styled.button`
 	border-radius: 0.4rem;
 	&:hover {
 		background-color: rgba(202, 138, 4, 0.7);
+	}
+	@media (max-width: 945px) {
+		width: 16rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	@media (max-width: 550px) {
+		width: 14rem;
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
 	}
 `
 const TelePhone = styled.p`

@@ -6,7 +6,7 @@ import SocialMedia from './SocialMedia'
 const FooterWrapper = styled.div`
 	background-image: linear-gradient(to right, #6449c3, #2f2063);
 	width: 100%;
-	height: 50vh;
+	height: 55vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
