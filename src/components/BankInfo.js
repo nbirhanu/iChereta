@@ -48,7 +48,6 @@ const BankData = [
 //
 
 function BankInfo() {
-	console.log(BankData)
 	return (
 		<>
 			<Banks data={BankData} />

@@ -1,5 +1,4 @@
 import { styled } from 'styled-components'
-import Commercial from '../data/img/commercial.jpg'
 import { Link } from 'react-router-dom'
 //
 import Skeleton from 'react-loading-skeleton'
@@ -22,6 +21,9 @@ const BankDiv = styled.div`
 	border: 1px solid rgba(102, 75, 199, 0.1);
 	box-shadow: 2px 6px 8px -2px rgba(102, 75, 199, 0.1);
 	border-radius: 5px;
+	@media (max-width: 1000px) {
+		width: 200px;
+	}
 `
 const BankLogoDiv = styled.div`
 	width: 7rem;
