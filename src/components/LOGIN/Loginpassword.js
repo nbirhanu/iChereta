@@ -15,6 +15,7 @@ import {
 const EyeContainer = styled.div`
 	font-size: 1.8rem;
 	color: rgba(148, 163, 184, 1);
+	cursor: pointer;
 `
 
 function Loginpassword() {

@@ -6,11 +6,23 @@ export const InputContainer = styled.div`
 	position: relative;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	width: 45rem;
 	border: 1px solid rgba(203, 213, 225, 1);
 	padding: 10px;
 	border-radius: 4px;
 	margin-bottom: 2rem;
+	@media (max-width: 600px) {
+		width: 40rem;
+		padding: 8px;
+		margin-bottom: 3rem;
+	}
+	@media (max-width: 450px) {
+		width: 35rem;
+	}
+	@media (max-width: 400px) {
+		width: 32rem;
+	}
 `
 export const IconDiv = styled.div`
 	font-size: 1.8rem;

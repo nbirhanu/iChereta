@@ -3,7 +3,10 @@ import { styled } from 'styled-components'
 
 const LoginHeroWrapper = styled.div`
 	background-color: rgba(102, 75, 199, 1);
-	height: 100vh;
+	height: 100%;
+	@media (max-width: 900px) {
+		display: none;
+	}
 `
 const LoginHeroLogo = styled.img`
 	width: 25%;
@@ -11,14 +14,28 @@ const LoginHeroLogo = styled.img`
 	margin-left: 3.4rem;
 `
 const LoginHeroImageContainer = styled.div`
+	height: 78%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 8rem;
+	justify-content: space-between;
+	/* gap: 6rem; */
 	margin-top: 6.8rem;
+	/* @media (max-width: 1000px) {
+		justify-content: space-around;
+	} */
 `
 const Image = styled.img`
 	width: 80%;
+	@media (max-width: 1150px) {
+		margin-top: 4rem;
+	}
+	@media (max-width: 1050px) {
+		margin-top: 5rem;
+	}
+	@media (max-width: 1000px) {
+		margin-top: 6rem;
+	}
 `
 const CopyRight = styled.p`
 	color: rgba(190, 180, 225, 1);

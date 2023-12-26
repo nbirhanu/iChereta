@@ -3,11 +3,14 @@ import LoginEmail from './LoginEmail'
 import Loginpassword from './Loginpassword'
 import LoginButton from './LoginButton'
 
-const InputFormWrapper = styled.div`
+export const InputFormWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-top: 8rem;
+	@media (max-width: 600px) {
+		margin-top: 6rem;
+	}
 `
 
 function LoginInput() {
