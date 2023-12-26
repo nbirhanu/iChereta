@@ -1,28 +1,28 @@
 import { styled } from 'styled-components'
 
-const AboutContainer = styled.div`
+export const AboutContainer = styled.div`
 	width: 60%;
 	margin: auto;
 	background-color: rgba(241, 245, 249, 1);
 	padding: 2.4rem;
 	border-radius: 10px;
 `
-const Div = styled.div`
+export const Div = styled.div`
 	width: 100%;
 	margin: auto;
 `
-const Tittle = styled.p`
+export const Tittle = styled.p`
 	font-size: 1.8rem;
 	font-weight: 700;
 	margin-bottom: 2.8rem;
 `
-const SpanContainer = styled.div`
+export const SpanContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 1.2rem;
 	margin-bottom: 3.2rem;
 `
-const P = styled.p`
+export const P = styled.p`
 	font-size: 1.3rem;
 	line-height: 1.5;
 `
@@ -34,7 +34,7 @@ const Li = styled.li`
 	line-height: 1.5;
 	margin-bottom: 1.2rem;
 `
-const Span = styled.span`
+export const Span = styled.span`
 	font-size: 1.3rem;
 	font-weight: 700;
 	color: #111;

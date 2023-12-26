@@ -17,13 +17,13 @@ function AboutUs() {
 			<Link style={{ textDecoration: 'none' }} to="/about">
 				<LinkP>About Us.</LinkP>
 			</Link>
-			<Link style={{ textDecoration: 'none' }}>
+			<Link style={{ textDecoration: 'none' }} to="/privacy">
 				<LinkP>Privacy Policy.</LinkP>
 			</Link>
-			<Link style={{ textDecoration: 'none' }}>
+			<Link style={{ textDecoration: 'none' }} to="refund">
 				<LinkP>Refund Policy.</LinkP>
 			</Link>
-			<Link style={{ textDecoration: 'none' }}>
+			<Link style={{ textDecoration: 'none' }} to="term">
 				<LinkP>Terms of Services.</LinkP>
 			</Link>
 		</LinkWrapper>
