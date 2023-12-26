@@ -65,12 +65,14 @@ function Header() {
 	return (
 		<FixedHeader>
 			<LinkWrapper>
-				<Logo>
-					<LogoImage
-						src="https://ichereta.com/static/media/logowitht.d8bdbb154b2f43a1a62a9468b46394dd.svg"
-						alt="ichereta logo"
-					/>
-				</Logo>
+				<Link to="/">
+					<Logo>
+						<LogoImage
+							src="https://ichereta.com/static/media/logowitht.d8bdbb154b2f43a1a62a9468b46394dd.svg"
+							alt="ichereta logo"
+						/>
+					</Logo>
+				</Link>
 				<Links>
 					<Link style={{ textDecoration: 'none' }} to="/tenders">
 						<LinkLetter>Tenders</LinkLetter>
