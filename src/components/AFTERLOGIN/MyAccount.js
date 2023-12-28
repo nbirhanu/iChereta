@@ -21,10 +21,8 @@ const AccountTittle = styled.p`
 `
 
 function MyAccount() {
-	const { accountOpen, setAccountOpen } = useAuth()
-	const handleAccount = function () {
-		setAccountOpen(!accountOpen)
-	}
+	const { handleAccount } = useAuth()
+
 	return (
 		<AccountContainer onClick={handleAccount}>
 			<AccountIcon>
