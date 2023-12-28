@@ -11,6 +11,7 @@ import {
 	PlaceHolderContainer,
 	PlaceHolderSpan,
 } from './LoginEmail'
+import { useAuth } from '../../CONTEXTAPI/ContextApi'
 
 const EyeContainer = styled.div`
 	font-size: 1.8rem;
@@ -19,7 +20,7 @@ const EyeContainer = styled.div`
 `
 
 function Loginpassword() {
-	const [password, setPassword] = useState('')
+	const { loginPassword, setloginPassword } = useAuth()
 	const [showPassword, setShowpassword] = useState(false)
 
 	const passwordVisibility = function () {
@@ -27,7 +28,7 @@ function Loginpassword() {
 	}
 
 	const handleOnChange = function (e) {
-		setPassword(e.target.value)
+		setloginPassword(e.target.value)
 	}
 
 	return (
@@ -38,11 +39,11 @@ function Loginpassword() {
 			<StyleInput
 				type={showPassword ? 'text' : 'password'}
 				placeholder=""
-				value={password}
+				value={loginPassword}
 				onChange={handleOnChange}
 			/>
-			<PlaceHolderContainer hasValue={password.length > 0}>
-				<PlaceHolderSpan hasValue={password.length > 0}>Password</PlaceHolderSpan>
+			<PlaceHolderContainer hasValue={loginPassword.length > 0}>
+				<PlaceHolderSpan hasValue={loginPassword.length > 0}>Password</PlaceHolderSpan>
 			</PlaceHolderContainer>
 			<EyeContainer onClick={passwordVisibility}>
 				{showPassword ? <IoMdEyeOff /> : <IoMdEye />}

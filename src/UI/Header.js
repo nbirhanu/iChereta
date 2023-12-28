@@ -1,7 +1,7 @@
 import { styled } from 'styled-components'
 import { Link } from 'react-router-dom'
 import MobileNavigation from '../components/MobileNavigation'
-const FixedHeader = styled.div`
+export const FixedHeader = styled.div`
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -15,7 +15,7 @@ const FixedHeader = styled.div`
 	padding-top: 1.4rem; /* 14px */
 	padding-bottom: 1.4rem; /* 14px */ // Set a high z-index to ensure it appears above other elements
 `
-const LinkWrapper = styled.div`
+export const LinkWrapper = styled.div`
 	width: 89%;
 	margin: auto;
 	display: flex;
@@ -28,12 +28,12 @@ export const Logo = styled.div`
 export const LogoImage = styled.img`
 	width: 10.4rem;
 `
-const Links = styled.div`
+export const Links = styled.div`
 	display: flex;
 	align-items: center;
 	column-gap: 3.2rem;
 `
-const LinkLetter = styled.p`
+export const LinkLetter = styled.p`
 	color: #664bc7;
 	font-size: 1.4rem;
 	&:hover {
@@ -43,7 +43,7 @@ const LinkLetter = styled.p`
 		display: none;
 	}
 `
-const Login = styled.p`
+export const Login = styled.p`
 	font-size: 1.4rem;
 	color: rgb(255 255 255);
 	background-color: rgb(102 75 199);

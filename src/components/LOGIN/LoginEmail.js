@@ -1,6 +1,7 @@
 import { styled } from 'styled-components'
 import { IoPerson } from 'react-icons/io5'
 import { useState } from 'react'
+import { useAuth } from '../../CONTEXTAPI/ContextApi'
 
 export const InputContainer = styled.div`
 	position: relative;
@@ -52,18 +53,19 @@ export const PlaceHolderSpan = styled.span`
 `
 
 function LoginEmail() {
-	const [inputValue, setInputValue] = useState('')
+	const { loginEmail, setLoginEmail } = useAuth()
+
 	const handleOnChange = function (e) {
-		setInputValue(e.target.value)
+		setLoginEmail(e.target.value)
 	}
 	return (
 		<InputContainer>
 			<IconDiv>
 				<IoPerson />
 			</IconDiv>
-			<StyleInput type="email" placeholder="" value={inputValue} onChange={handleOnChange} />
-			<PlaceHolderContainer hasValue={inputValue.length > 0}>
-				<PlaceHolderSpan hasValue={inputValue.length > 0}>Email or Phone Number</PlaceHolderSpan>
+			<StyleInput type="email" placeholder="" value={loginEmail} onChange={handleOnChange} />
+			<PlaceHolderContainer hasValue={loginEmail.length > 0}>
+				<PlaceHolderSpan hasValue={loginEmail.length > 0}>Email or Phone Number</PlaceHolderSpan>
 			</PlaceHolderContainer>
 		</InputContainer>
 	)

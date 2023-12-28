@@ -53,7 +53,9 @@ function LoginButton() {
 			<Link style={{ textDecoration: 'none' }} to="/forgot-password">
 				<ForGotPassword>Forgot Password ?</ForGotPassword>
 			</Link>
-			<Button>Log in</Button>
+			<Link to="/tender">
+				<Button>Log in</Button>
+			</Link>
 		</LoginButtonContainer>
 	)
 }

@@ -3,11 +3,13 @@ import { createContext, useContext, useState } from 'react'
 const CreateContext = createContext()
 
 export const ContextProvider = function ({ children }) {
+	const [loginEmail, setLoginEmail] = useState('nati@nati.com')
+	const [loginPassword, setloginPassword] = useState('12345678')
 	const [choice, setChoice] = useState(false)
 	const [choice2, setChoice2] = useState(false)
 	const [step, setStep] = useState(1)
 	const [formData, setFormData] = useState({
-		firstName: '',
+		firstName: 'Natnael Birhanu',
 		lastName: '',
 		companyName: '',
 		phoneNumber: '',
@@ -17,6 +19,7 @@ export const ContextProvider = function ({ children }) {
 	const [selectedCard, setSelectedCard] = useState(0)
 	const [selectedSystem, setSelectedSystem] = useState(0)
 	const [seletedBank, setSelectedBank] = useState(0)
+	const [accountOpen, setAccountOpen] = useState(false)
 
 	const firstName = formData.firstName
 	const lastName = formData.lastName
@@ -41,6 +44,11 @@ export const ContextProvider = function ({ children }) {
 	const handleClick2 = function () {
 		setChoice2(!choice2)
 	}
+	//
+	const handleAccount = function () {
+		setAccountOpen(!accountOpen)
+	}
+	//
 
 	const value = {
 		handleInputChange,
@@ -65,6 +73,13 @@ export const ContextProvider = function ({ children }) {
 		setSelectedSystem,
 		seletedBank,
 		setSelectedBank,
+		accountOpen,
+		setAccountOpen,
+		loginEmail,
+		setLoginEmail,
+		loginPassword,
+		setloginPassword,
+		handleAccount,
 	}
 
 	return <CreateContext.Provider value={value}>{children}</CreateContext.Provider>
