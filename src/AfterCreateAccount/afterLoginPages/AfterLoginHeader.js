@@ -18,7 +18,7 @@ function AfterLoginHeader() {
 						/>
 					</Logo>
 				</Link>
-				<Links style={{ columnGap: '2.8rem' }}>
+				<Links style={{ columnGap: '1.8rem', marginRight: '-1.2rem' }}>
 					<Link style={{ textDecoration: 'none' }} to="/tender">
 						<LinkLetter>Tenders</LinkLetter>
 					</Link>

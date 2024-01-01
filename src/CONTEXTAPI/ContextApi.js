@@ -12,13 +12,15 @@ export const ContextProvider = function ({ children }) {
 		firstName: 'Natnael Birhanu',
 		lastName: '',
 		companyName: '',
-		phoneNumber: '',
+		phoneNumber: '0915191919',
 		email: '',
 		password: '',
 	})
 	const [selectedCard, setSelectedCard] = useState(0)
 	const [selectedSystem, setSelectedSystem] = useState(0)
 	const [seletedBank, setSelectedBank] = useState(0)
+	const [selectedMyAccount, setSelectedMyAccount] = useState(0)
+	const [selectSetting, setSelectSetting] = useState(0)
 	const [accountOpen, setAccountOpen] = useState(false)
 
 	const firstName = formData.firstName
@@ -80,6 +82,10 @@ export const ContextProvider = function ({ children }) {
 		loginPassword,
 		setloginPassword,
 		handleAccount,
+		selectedMyAccount,
+		setSelectedMyAccount,
+		selectSetting,
+		setSelectSetting,
 	}
 
 	return <CreateContext.Provider value={value}>{children}</CreateContext.Provider>

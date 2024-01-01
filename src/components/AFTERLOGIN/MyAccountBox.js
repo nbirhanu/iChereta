@@ -4,7 +4,7 @@ import MyAccountPersonalForm from './MyAccountPersonalForm'
 import MyAccountCompanyForm from './MyAccountCompanyForm'
 import MyAccountSecurityForm from './MyAccountSecurityForm'
 
-const FormWrapper = styled.div`
+export const FormWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 100%;

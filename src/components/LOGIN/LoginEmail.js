@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 import { IoPerson } from 'react-icons/io5'
-import { useState } from 'react'
+
 import { useAuth } from '../../CONTEXTAPI/ContextApi'
 
 export const InputContainer = styled.div`

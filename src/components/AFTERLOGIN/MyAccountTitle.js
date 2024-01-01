@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 
-const MyAccountTittleWrapper = styled.div`
+export const MyAccountTittleWrapper = styled.div`
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -14,11 +14,11 @@ const MyAccountTittleWrapper = styled.div`
 	border-radius: 4px;
 `
 
-const P1 = styled.p`
+export const P1 = styled.p`
 	font-size: 1.6rem;
 	font-weight: 700;
 `
-const P2 = styled.p`
+export const P2 = styled.p`
 	font-size: 1.3rem;
 	text-align: center;
 	line-height: 2rem;

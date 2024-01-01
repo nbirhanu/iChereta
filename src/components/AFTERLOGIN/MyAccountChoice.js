@@ -14,7 +14,7 @@ const myAccountData = [
 	},
 ]
 
-const MyAccountChoiceContainer = styled.div`
+export const MyAccountChoiceContainer = styled.div`
 	width: 90%;
 	background-color: rgba(255, 255, 255, 1);
 	display: flex;

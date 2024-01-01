@@ -24,7 +24,7 @@ const AccountNavigationWrapper = styled.div`
 	background-color: rgba(255, 255, 255, 1);
 	color: rgba(61, 89, 132, 1);
 	top: 5.5rem;
-	right: 6.2%;
+	right: 5%;
 	border: 1px solid rgba(241, 245, 249, 1);
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
@@ -36,7 +36,7 @@ const AccountNavigationContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin-top: 2rem;
-	gap: 1.4rem;
+	gap: 1.6rem;
 `
 
 function AccountNavigation() {
