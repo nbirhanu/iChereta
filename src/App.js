@@ -14,7 +14,12 @@ import ForgotPassword from './BeforeCreateAccount/pages/ForgotPassword'
 import PrivacyPolicy from './BeforeCreateAccount/pages/PrivacyPolicy'
 import RefundPage from './BeforeCreateAccount/pages/RefundPage'
 import TermsPage from './BeforeCreateAccount/pages/TermsPage'
+
+//context
+
 import { ContextProvider } from './CONTEXTAPI/ContextApi'
+
+//
 import AfterLogin from './AfterLogin'
 import MyFeed from './AfterCreateAccount/afterLoginPages/MyFeed'
 import SavedTenders from './AfterCreateAccount/afterLoginPages/SavedTenders'
