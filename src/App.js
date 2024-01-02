@@ -28,6 +28,16 @@ function App() {
 		<BrowserRouter>
 			<ContextProvider>
 				<Routes>
+					<Route element={<AfterLogin />}>
+						<Route index element={<Tenders />} />
+						<Route path="/tender" element={<Tenders />} />
+						<Route path="/feed" element={<MyFeed />} />
+						<Route path="/saved" element={<SavedTenders />} />
+						<Route path="/myaccount" element={<MyAccountPage />} />
+						<Route path="/billing" element={<BillingPage />} />
+						<Route path="/settings" element={<SettingsPage />} />
+						<Route path="/" element={<Logoutpage />} />
+					</Route>
 					<Route element={<BeforeAccountLayout />}>
 						<Route index element={<Starter />} />
 						<Route path="/" element={<Starter />} />
@@ -43,16 +53,6 @@ function App() {
 					<Route path="/signup" element={<Signup />} />
 					<Route path="/login" element={<Login />} />
 					<Route path="/forgot-password" element={<ForgotPassword />} />
-					<Route element={<AfterLogin />}>
-						<Route index element={<Tenders />} />
-						<Route path="/tender" element={<Tenders />} />
-						<Route path="/feed" element={<MyFeed />} />
-						<Route path="/saved" element={<SavedTenders />} />
-						<Route path="/myaccount" element={<MyAccountPage />} />
-						<Route path="/billing" element={<BillingPage />} />
-						<Route path="/settings" element={<SettingsPage />} />
-						<Route path="/" element={<Logoutpage />} />
-					</Route>
 				</Routes>
 			</ContextProvider>
 		</BrowserRouter>
