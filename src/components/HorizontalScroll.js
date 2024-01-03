@@ -9,6 +9,9 @@ const CompaniesWrapper = styled.div`
 	margin: auto;
 	position: relative;
 	margin-bottom: 8rem;
+	@media (max-width: 400px) {
+		width: 82%;
+	}
 `
 const ScrollContainer = styled.div`
 	width: 100%;

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { styled } from 'styled-components'
 //
 
@@ -115,7 +116,10 @@ function FooterTelePhone() {
 				</TelePhoneTittle>
 			</TelePhoneTittleDiv>
 			<TelephoneSignup>
-				<SignUpButton>Sign Up Now</SignUpButton>
+				<Link to="/signup">
+					<SignUpButton>Sign Up Now</SignUpButton>
+				</Link>
+
 				<TelePhone>
 					Got Questions? <br /> Call Us 0955305555
 				</TelePhone>

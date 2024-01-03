@@ -1,18 +1,18 @@
 import { styled } from 'styled-components'
 
 const headers = ['Invoice ID', 'Method', 'Invoice Date', 'Amount', 'Status']
-const data = [
-	['#6143503135', 1, 'December 12, 2023 03:35 PM', 2360, 0],
-	['#6143503135', 2, 'December 16, 2023 08:25 PM', 2360, 0],
-	['#6143503135', 5, 'December 19, 2023 06:34 PM', 23600, 0],
-	['#6143503135', 8, 'December 28, 2023 03:35 PM', 2968, 0],
-]
+const data = [['#6143503135', 1, 'December 12, 2023 03:35 PM', 2360, 0]]
 
 const StyledTable = styled.table`
 	border-collapse: collapse;
 	width: 130%;
 	margin-left: -15%;
 	color: rgba(61, 89, 132, 1);
+
+	@media (max-width: 750px) {
+		width: 100%;
+		margin-left: 0;
+	}
 `
 
 const StyledHeader = styled.th`
@@ -21,13 +21,26 @@ const StyledHeader = styled.th`
 	text-align: center;
 	font-size: 1.4rem;
 	color: rgba(61, 89, 132, 1);
+	@media (max-width: 750px) {
+		font-size: 1.2rem;
+	}
+	@media (max-width: 500px) {
+		font-size: 1.1rem;
+	}
 `
 
 const StyledRow = styled.tr`
 	color: rgba(61, 89, 132, 1);
 	font-size: 1.2rem;
+
 	&:nth-child(even) {
 		background-color: white;
+	}
+	@media (max-width: 750px) {
+		font-size: 1.1rem;
+	}
+	@media (max-width: 500px) {
+		font-size: 1rem;
 	}
 `
 

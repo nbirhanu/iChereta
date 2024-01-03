@@ -2,6 +2,7 @@ import { styled } from 'styled-components'
 import MyAccountTitle from '../../components/AFTERLOGIN/MyAccountTitle'
 import MyAccountChoice from '../../components/AFTERLOGIN/MyAccountChoice'
 import MyAccountBox from '../../components/AFTERLOGIN/MyAccountBox'
+import AfterLoginHeader from './AfterLoginHeader'
 
 export const MyAccountWrapper = styled.div`
 	width: 88%;
@@ -10,9 +11,12 @@ export const MyAccountWrapper = styled.div`
 	background-color: rgba(248, 248, 255, 1);
 	display: flex;
 	justify-content: center;
+	@media (max-width: 570px) {
+		background-color: white;
+	}
 `
 export const MyAccountContainer = styled.div`
-	width: 40%;
+	width: 50rem;
 	margin-top: 4rem;
 	display: flex;
 	flex-direction: column;
@@ -20,13 +24,16 @@ export const MyAccountContainer = styled.div`
 
 function MyAccountPage() {
 	return (
-		<MyAccountWrapper>
-			<MyAccountContainer>
-				<MyAccountTitle />
-				<MyAccountChoice />
-				<MyAccountBox />
-			</MyAccountContainer>
-		</MyAccountWrapper>
+		<>
+			<AfterLoginHeader />
+			<MyAccountWrapper>
+				<MyAccountContainer>
+					<MyAccountTitle />
+					<MyAccountChoice />
+					<MyAccountBox />
+				</MyAccountContainer>
+			</MyAccountWrapper>
+		</>
 	)
 }
 

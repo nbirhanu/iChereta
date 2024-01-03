@@ -6,6 +6,21 @@ export const AboutContainer = styled.div`
 	background-color: rgba(241, 245, 249, 1);
 	padding: 2.4rem;
 	border-radius: 10px;
+	@media (max-width: 1000px) {
+		width: 70%;
+	}
+	@media (max-width: 900px) {
+		width: 75%;
+	}
+	@media (max-width: 700px) {
+		width: 80%;
+	}
+	@media (max-width: 600px) {
+		width: 85%;
+	}
+	@media (max-width: 500px) {
+		width: 90%;
+	}
 `
 export const Div = styled.div`
 	width: 100%;
@@ -25,6 +40,12 @@ export const SpanContainer = styled.div`
 export const P = styled.p`
 	font-size: 1.3rem;
 	line-height: 1.5;
+	@media (max-width: 600px) {
+		font-size: 1.2rem;
+	}
+	@media (max-width: 500px) {
+		font-size: 1.1rem;
+	}
 `
 const Ul = styled.ul`
 	margin-left: 1.4rem;

@@ -13,11 +13,19 @@ const AccountContainer = styled.div`
 	gap: 0.8rem;
 	border-radius: 4px;
 	cursor: pointer;
+	@media (max-width: 800px) {
+		width: 3rem;
+		height: 3rem;
+		border-radius: 9999px;
+	}
 `
 const AccountIcon = styled.div``
 const AccountTittle = styled.p`
 	color: rgba(102, 75, 199, 1);
 	font-size: 1.3rem;
+	@media (max-width: 800px) {
+		display: none;
+	}
 `
 
 function MyAccount() {

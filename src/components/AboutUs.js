@@ -9,6 +9,9 @@ const LinkWrapper = styled.div`
 const LinkP = styled.p`
 	font-size: 1.4rem;
 	color: hsla(0, 0%, 100%, 0.6);
+	@media (max-width: 410px) {
+		font-size: 1.2rem;
+	}
 `
 //////
 function AboutUs() {

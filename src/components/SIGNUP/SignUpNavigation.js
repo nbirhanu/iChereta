@@ -36,6 +36,9 @@ const Step1Span = styled.span`
 const Personal = styled.p`
 	font-size: ${({ size }) => (size ? '1.1rem' : '1.2rem')};
 	color: ${({ personal }) => (personal ? 'rgba(34, 197, 94,1)' : 'rgba(102, 75, 199, 1)')};
+	@media (max-width: 390px) {
+		font-size: ${({ size }) => (size ? '1rem' : '1.1rem')};
+	}
 `
 
 ///STEP2
@@ -57,6 +60,9 @@ const Step2Span = styled.span`
 const Account = styled.p`
 	font-size: 1.2rem;
 	color: ${({ account }) => (account ? 'rgba(102, 75, 199, 1)' : 'rgba(209, 213, 219, 1)')};
+	@media (max-width: 390px) {
+		font-size: ${({ size }) => (size ? '1rem' : '1.1rem')};
+	}
 `
 
 //////
@@ -78,6 +84,9 @@ const StepSecondSpan = styled.span`
 const AccountSecond = styled.p`
 	font-size: ${({ size }) => (size ? '1.1rem' : '1.2rem')};
 	color: rgba(34, 197, 94, 1);
+	@media (max-width: 390px) {
+		font-size: ${({ size }) => (size ? '1rem' : '1.1rem')};
+	}
 `
 
 /////
@@ -101,6 +110,9 @@ const Step3Span = styled.span`
 const Completed = styled.p`
 	font-size: ${({ size }) => (size ? '1.1rem' : '1.2rem')};
 	color: ${({ completed }) => (completed ? 'rgba(234 ,179 ,8,1)' : 'rgba(209, 213, 219, 1)')};
+	@media (max-width: 390px) {
+		font-size: ${({ size }) => (size ? '1rem' : '1.1rem')};
+	}
 `
 
 /// LINES

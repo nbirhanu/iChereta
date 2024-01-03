@@ -1,8 +1,5 @@
 import { Link } from 'react-router-dom'
-
-import MobileNavigation from '../../components/MobileNavigation'
 import { FixedHeader, LinkWrapper, Logo, LogoImage, Links, LinkLetter } from '../../UI/Header'
-import Notification from '../../components/AFTERLOGIN/Notification'
 import MyAccount from '../../components/AFTERLOGIN/MyAccount'
 import AccountNavigation from '../../components/AFTERLOGIN/AccountNavigation'
 
@@ -29,12 +26,11 @@ function AfterLoginHeader() {
 					<Link style={{ textDecoration: 'none' }} to="/saved">
 						<LinkLetter>Saved Tenders</LinkLetter>
 					</Link>
-					<Notification />
+					{/* <Notification /> */}
 					<MyAccount />
-					<AccountNavigation />
 				</Links>
-				<MobileNavigation />
 			</LinkWrapper>
+			<AccountNavigation />
 		</FixedHeader>
 	)
 }

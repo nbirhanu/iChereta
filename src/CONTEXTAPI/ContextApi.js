@@ -22,6 +22,7 @@ export const ContextProvider = function ({ children }) {
 	const [selectedMyAccount, setSelectedMyAccount] = useState(0)
 	const [selectSetting, setSelectSetting] = useState(0)
 	const [accountOpen, setAccountOpen] = useState(false)
+	const [selectedTender, setSelectedTender] = useState(0)
 
 	const firstName = formData.firstName
 	const lastName = formData.lastName
@@ -86,6 +87,8 @@ export const ContextProvider = function ({ children }) {
 		setSelectedMyAccount,
 		selectSetting,
 		setSelectSetting,
+		selectedTender,
+		setSelectedTender,
 	}
 
 	return <CreateContext.Provider value={value}>{children}</CreateContext.Provider>

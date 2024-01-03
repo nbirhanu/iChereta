@@ -38,6 +38,9 @@ export const StyleInput = styled.input`
 	outline: none;
 	font-size: 1.4rem;
 	background-color: white;
+	font-size: 1.2rem;
+	color: rgba(61, 89, 132, 1);
+	letter-spacing: 1px;
 `
 export const PlaceHolderContainer = styled.div`
 	position: absolute;

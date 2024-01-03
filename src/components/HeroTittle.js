@@ -116,6 +116,9 @@ const Signup = styled.p`
 	@media (max-width: 575px) {
 		font-size: 1.4rem;
 	}
+	@media (max-width: 390px) {
+		font-size: 1.2rem;
+	}
 `
 const Login = styled.p`
 	border: 1px solid #664bc7;
@@ -147,6 +150,10 @@ const Login = styled.p`
 	}
 	@media (max-width: 575px) {
 		font-size: 1.4rem;
+	}
+	@media (max-width: 390px) {
+		font-size: 1.2rem;
+		padding: 0.9rem 1.2rem;
 	}
 `
 const GraphDiv = styled.div`

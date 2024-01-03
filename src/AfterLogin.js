@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import AfterLoginHeader from './AfterCreateAccount/afterLoginPages/AfterLoginHeader'
+import FixedFooter from './components/AFTERLOGIN/FixedFooter'
 
 function AfterLogin() {
 	return (
@@ -8,6 +9,7 @@ function AfterLogin() {
 			<div>
 				<Outlet />
 			</div>
+			<FixedFooter />
 		</>
 	)
 }

@@ -60,7 +60,6 @@ const SubBottonWrapper = styled.div`
 		margin-right: auto;
 
 		position: absolute;
-		width: 40rem;
 	}
 	@media (max-width: 575px) {
 		margin-left: -2rem;
@@ -71,6 +70,9 @@ const SubBottonWrapper = styled.div`
 
 	@media (max-width: 500px) {
 		margin-left: -4rem;
+	}
+	@media (max-width: 400px) {
+		margin-left: -6rem;
 	}
 `
 const SubH1 = styled.h1`
@@ -87,6 +89,9 @@ const SubH1 = styled.h1`
 	}
 	@media (max-width: 500px) {
 		font-size: 3.2rem;
+	}
+	@media (max-width: 400px) {
+		font-size: 2.8rem;
 	}
 `
 const SubH2 = styled.h2`

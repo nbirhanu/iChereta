@@ -9,12 +9,16 @@ const PaymentWrapper = styled.div`
 	flex-direction: column;
 	align-items: center;
 	width: 42rem;
-	height: 43vh;
+	gap: 1.4rem;
+	padding: 2rem 0;
 	border: 1px solid rgba(209, 213, 219, 1);
 	margin-top: 2.8rem;
 	border-radius: 5px;
 	@media (max-width: 500px) {
-		width: 40rem;
+		width: 35rem;
+	}
+	@media (max-width: 400px) {
+		width: 32rem;
 	}
 `
 const PaymentTittleContainer = styled.div`

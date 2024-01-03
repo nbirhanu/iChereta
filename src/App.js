@@ -53,11 +53,11 @@ function App() {
 						<Route path="/tender" element={<Tenders />} />
 						<Route path="/feed" element={<MyFeed />} />
 						<Route path="/saved" element={<SavedTenders />} />
-						<Route path="/myaccount" element={<MyAccountPage />} />
-						<Route path="/billing" element={<BillingPage />} />
-						<Route path="/settings" element={<SettingsPage />} />
-						<Route path="/" element={<Logoutpage />} />
 					</Route>
+					<Route path="/myaccount" element={<MyAccountPage />} />
+					<Route path="/billing" element={<BillingPage />} />
+					<Route path="/settings" element={<SettingsPage />} />
+					<Route path="/" element={<Logoutpage />} />
 				</Routes>
 			</ContextProvider>
 		</BrowserRouter>

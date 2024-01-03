@@ -27,6 +27,9 @@ const P1 = styled.p`
 	@media (max-width: 500px) {
 		font-size: 1.3rem;
 	}
+	@media (max-width: 400px) {
+		font-size: 1.2rem;
+	}
 `
 const P2 = styled.p`
 	font-size: 1.2rem;

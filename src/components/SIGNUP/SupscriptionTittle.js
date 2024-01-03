@@ -14,7 +14,7 @@ const TittleContainer = styled.div`
 		margin-left: 5rem;
 	}
 	@media (max-width: 400px) {
-		margin-left: 8rem;
+		margin-left: 6rem;
 	}
 `
 const P = styled.p`

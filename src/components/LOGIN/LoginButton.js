@@ -10,6 +10,24 @@ export const LoginButtonContainer = styled.div`
 		justify-content: center;
 		align-items: center;
 	}
+	@media (max-width: 600px) {
+		width: 42rem;
+	}
+	@media (max-width: 500px) {
+		width: 40rem;
+	}
+	@media (max-width: 450px) {
+		width: 36rem;
+	}
+	@media (max-width: 420px) {
+		width: 35rem;
+	}
+	@media (max-width: 395px) {
+		width: 33rem;
+	}
+	@media (max-width: 385px) {
+		width: 32rem;
+	}
 `
 export const ForGotPassword = styled.p`
 	cursor: pointer;
@@ -27,7 +45,6 @@ export const ForGotPassword = styled.p`
 	}
 `
 export const Button = styled.button`
-	/* width: 100%; */
 	width: 45rem;
 	margin-top: 1.8rem;
 	border: none;
@@ -37,13 +54,22 @@ export const Button = styled.button`
 	border-radius: 5px;
 	font-size: 1.4rem;
 	@media (max-width: 600px) {
-		width: 90%;
+		width: 42rem;
+	}
+	@media (max-width: 500px) {
+		width: 40rem;
 	}
 	@media (max-width: 450px) {
-		width: 80%;
+		width: 36rem;
 	}
-	@media (max-width: 400px) {
-		width: 73%;
+	@media (max-width: 420px) {
+		width: 35rem;
+	}
+	@media (max-width: 395px) {
+		width: 33rem;
+	}
+	@media (max-width: 385px) {
+		width: 32rem;
 	}
 `
 

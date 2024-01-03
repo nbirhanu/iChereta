@@ -18,6 +18,12 @@ const FooterTelePhoneWrapper = styled.div`
 	width: 88%;
 	position: absolute;
 	top: -35%;
+	@media (max-width: 405px) {
+		top: -30%;
+	}
+	/* @media (max-width: 405px) {
+		top: -30%;
+	} */
 `
 const SocialMediaWrapper = styled.div`
 	width: 100%;
