@@ -13,6 +13,10 @@ export const ThreeMonthCardWrapper = styled.div`
 	background-color: rgb(255 255 255);
 	border-radius: 4px;
 	box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+	transition: transform 0.5s ease;
+	&:hover {
+		transform: scale(1.1) translateZ(20px);
+	}
 	@media (max-width: 1010px) {
 		flex-direction: row;
 		align-items: center;
