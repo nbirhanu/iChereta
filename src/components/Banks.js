@@ -21,6 +21,10 @@ const BankDiv = styled.div`
 	border: 1px solid rgba(102, 75, 199, 0.1);
 	box-shadow: 2px 6px 8px -2px rgba(102, 75, 199, 0.1);
 	border-radius: 5px;
+	transition: transform 0.5s ease;
+	&:hover {
+		transform: scale(1.1) translateZ(20px);
+	}
 	@media (max-width: 1000px) {
 		width: 200px;
 	}
