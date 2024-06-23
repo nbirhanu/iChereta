@@ -18,7 +18,6 @@ const FAQWrapper = styled.div`
 	}
 `
 const FAQDiv = styled.div`
-	/* width: 70%; */
 	width: 80rem;
 	margin: auto;
 	display: flex;
@@ -39,7 +38,7 @@ const QuestionAnswerWrapper = styled.div`
 	padding: 1rem 1rem 1rem 1rem;
 	margin-bottom: 1.2rem;
 	background-color: white;
-	transition: 0.2s;
+	cursor: pointer;
 	&:hover {
 		background-color: rgba(239, 246, 255, 0.5);
 	}
@@ -95,6 +94,7 @@ const Answer = styled.p`
 	color: rgba(75, 85, 99, 1);
 	font-size: 1.3rem;
 	font-weight: 600;
+	transition: 1s ease;
 	@media (max-width: 680px) {
 		font-size: 1.1rem;
 	}

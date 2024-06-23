@@ -19,6 +19,10 @@ const BuySaveWrapper = styled.div`
 	/* width: 32rem; */
 	display: flex;
 	flex-direction: column;
+	transition: transform 0.5s ease;
+	&:hover {
+		transform: scale(1.1) translateZ(20px);
+	}
 `
 const BuySave = styled.div`
 	background-color: rgba(102, 75, 199, 1);
@@ -32,6 +36,28 @@ const BuySaveP = styled.p`
 	font-weight: 600;
 	padding: 1.6rem 0;
 `
+
+const Year = styled.div`
+	display: flex;
+	flex-direction: column;
+	border: 1px solid rgba(102, 75, 199, 0.3);
+	padding: 4.2rem 3.2rem;
+	background-color: rgb(255 255 255);
+	border-radius: 4px;
+	box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+	@media (max-width: 1010px) {
+		flex-direction: row;
+		align-items: center;
+		gap: 7rem;
+	}
+	@media (max-width: 765px) {
+		gap: 2rem;
+	}
+	@media (max-width: 690px) {
+		flex-direction: column;
+	}
+`
 //
 function YearCard() {
 	const [show, setShow] = useState(false)
@@ -43,7 +69,7 @@ function YearCard() {
 			<BuySave>
 				<BuySaveP>Buy Yearly and Save 60%</BuySaveP>
 			</BuySave>
-			<ThreeMonthCardWrapper style={{ borderTopRightRadius: 'none', borderTopLeftRadius: 'none' }}>
+			<Year style={{ borderTopRightRadius: 'none', borderTopLeftRadius: 'none' }}>
 				<ThreeMonthBotton>
 					<ThreeMonthTittle style={{ fontSize: '2.2rem' }}>
 						1 Year <br /> <span style={{ fontSize: '2.8rem' }}>2,360 birr</span>
@@ -94,7 +120,7 @@ function YearCard() {
 					</Ul2Splite>
 					<ShowLess onClick={handleShow}>{show ? 'Show less' : 'Show more'}</ShowLess>
 				</ListWrapper>
-			</ThreeMonthCardWrapper>
+			</Year>
 		</BuySaveWrapper>
 	)
 }
